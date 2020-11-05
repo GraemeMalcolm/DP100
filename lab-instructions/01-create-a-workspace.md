@@ -2,7 +2,7 @@
 
 In this exercise, you will create and explore an Azure Machine Learning workspace.
 
-## Create an Azure Machine Learning Workspace
+## Create an Azure Machine Learning workspace
 
 As its name suggests, a workspace is a centralized place to manage all of the Azure ML assets you need to work on a machine learning project.
 
@@ -20,7 +20,7 @@ You can manage some workspace assets in the Azure portal, but for data scientist
 2. View the Azure Machine Learning studio interface for your workspace - you can manage all of the assets in your workspace from here.
 3. In Azure Machine Learning studio, toggle the &#9776; icon at the top left to show and hide the various pages in the interface. You can use these pages to manage the resources in your workspace.
 
-## Create a Compute Instance
+## Create a compute instance
 
 One of the benefits of Azure Machine Learning is the ability to create cloud-based compute on which you can run experiments and training scripts at scale.
 
@@ -51,4 +51,15 @@ A lot of data science and machine learning experimentation is performed by runni
     git clone https://github.com/GraemeMalcolm/DP100
     ```
 
-4. 
+4. When the command has completed, in the **My files** pane, click **&#8635;** to refresh the view and verify that a new folder named **DP100** has been created. This folder contains multiple **.ipynb** notebook files.
+5. Close the terminal pane, terminating the session.
+6. In the **DP100** folder, open the **Get Started with Notebooks** notebook. Then read the notes and follow the instructions it contains.
+
+> **Tip**: To run a code cell, select the cell you want to run and then use the **&#9655;** button to run it.
+
+## Stop your compute instance
+
+If you've finished exploring Azure Machine Learning for now, you should shut down your compute instance to avoid incurring unnecessary charges in your Azure subscription.
+
+1. In Azure Machine Learning studio, on the **Compute** page, select your compute instance.
+2. Click **Stop** to stop your compute instance. When it has shut down, its status will change to **Stopped**.
