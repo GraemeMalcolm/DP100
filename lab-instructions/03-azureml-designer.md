@@ -181,7 +181,7 @@ Now you can test your deployed service from a client application - in this case,
 1. On the **Endpoints** page, open the **designer-predict-diabetes** real-time endpoint.
 2. When the **designer-predict-diabetes** endpoint opens, on the **Consume** tab, note the **REST endpoint** and **Primary key** values.
 3. With the **Consume** page for the **designer-predict-diabetes** service page open in your browser, open a new browser tab and open a second instance of Azure Machine Learning studio. Then in the new tab, view the **Notebooks** page.
-4. In the **Notebooks** page, under **My files**, browse to the folder where you cloned the notebook repository, and open the **Get-Designer-Prediction** notebook.
+4. In the **Notebooks** page, under **My files**, browse to the folder where you cloned the notebook repository, and open the **Get Designer Prediction** notebook.
 5. When the notebook has opened, ensure that the compute instance you created previously is selected in the **Compute** box, and that it has a status of **Running**.
 6. In the notebook, replace the **ENDPOINT** and **PRIMARY_KEY** placeholders with the values for your service, which you can copy from the **Consume** tab on the page for your endpoint.
 7. Run the code cell and view the output returned by your web service.
@@ -192,4 +192,4 @@ The web service is hosted in a Kubernetes cluster. If you don't intend to experi
 
 1. In Azure Machine Learning studio, on the **Endpoints** tab, select the **designer-predict-diabetes** endpoint. Then click the **Delete** (&#128465;) button and confirm that you want to delete the endpoint.
 2. On the **Compute** page, on the **Inference clusters** tab, select the select your inference cluster. Then click the **Delete** (&#128465;) button and confirm that you want to delete the compute target.
-3. If you're finished working with Azure Machine Learning for the day, on the **Compute Instances** tab, select your compute instance and click **Stop** to shut it down.
+3. If you're finished working with Azure Machine Learning for now, on the **Compute Instances** tab, select your compute instance and click **Stop** to shut it down.
