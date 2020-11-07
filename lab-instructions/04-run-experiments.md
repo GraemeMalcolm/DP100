@@ -15,7 +15,7 @@ While you can use the **Notebooks** page in Azure Machine Learning studio to run
 
 ## Install the Azure Machine Learning SDK
 
-The Azure Machine Learning SDK is installed by default on your compute instance, but it is upgraded frequently; so follow these steps to upgrade to the latest release.
+The Azure Machine Learning SDK is installed by default on your compute instance, but it is updated frequently; so follow these steps to upgrade to the latest release.
 
 1. In the Jupyter notebook environment, create a new **Terminal**. This will open a new tab with a command shell.
 2. Enter the following command to update the Azure ML SDK, including the *notebooks* extra package:
