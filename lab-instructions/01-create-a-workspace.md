@@ -7,6 +7,9 @@ In this exercise, you will create and explore an Azure Machine Learning workspac
 As its name suggests, a workspace is a centralized place to manage all of the Azure ML assets you need to work on a machine learning project.
 
 1. In the [Azure portal](https://portal.azure.com), create a new **Machine Learning** resource, specifying a unique workspace name and creating a new resource group in the region nearest your location.
+
+    > **Note**: When you create an Azure Machine Learning workspace, you can use some advanced options to restrict access through a *private endpoint* and specify custom keys for data encryption. We won't use these options in this exercise - but you should be aware of them!
+
 2. When the workspace and its associated resources have been created, view the workspace in the portal.
 
 ## Explore Azure Machine Learning studio
@@ -36,7 +39,10 @@ One of the benefits of Azure Machine Learning is the ability to create cloud-bas
     - **Virtual Machine type**: CPU
     - **Virtual Machine size**: Standard_DS11_v2
     - **Compute name**: *enter a unique name*
-    - **Enable SSL configuration**: Unselected
+    - **Enable SSH access**: Unselected (you can use this to enable direct access to the virtual machine using an SSH client)
+    - **Advanced**:
+        - **Enable virtual network**: Unselected (you would typically use this in an enterprise environment to enhance network security)
+        - **Assign to another user**: Unselected (you can use this to assign a compute instance to a data scientist)
 3. Wait for the compute instance to start and its status to change to **Running**.
 
 ## Clone and run a notebook
@@ -46,7 +52,7 @@ A lot of data science and machine learning experimentation is performed by runni
 1. In Azure Machine Learning studio, view the **Notebooks** page.
 2. Open a **Terminal**, and ensure its **Compute** is set to your compute instance.
 3. Enter the following command to clone a Git repository containing notebooks, data, and other files to your workspace:
-    <!-- Update to MicrosoftDocs repo for release -->
+    <!-- Update to MicrosoftLearning repo for release -->
     ```bash
     git clone https://github.com/GraemeMalcolm/DP100
     ```
