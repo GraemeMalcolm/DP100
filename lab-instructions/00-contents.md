@@ -1,5 +1,7 @@
 # Azure Machine Learning Exercises
 
+To complete these exercises, you will need a Microsoft Azure subscription. If you don't already have one, sign up for a free trial at [https://azure.microsoft.com/free](https://azure.microsoft.com/free/).
+
 1. [Create a workspace](01-create-a-workspace.md)
 2. [Use automated machine learning](02-automated-ml.md)
 3. [Use Azure Machine Learning designer](03-azureml-designer.md)
