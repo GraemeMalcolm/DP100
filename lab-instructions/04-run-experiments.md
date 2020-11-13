@@ -18,21 +18,29 @@ While you can use the **Notebooks** page in Azure Machine Learning studio to run
 The Azure Machine Learning SDK is installed by default on your compute instance, but it is updated frequently; so follow these steps to upgrade to the latest release.
 
 1. In the Jupyter notebook environment, create a new **Terminal**. This will open a new tab with a command shell.
-2. Enter the following command to update the Azure ML SDK, including the *notebooks* extra package:
+2. Enter the following command to update the Azure ML SDK:
 
     ```bash
-    pip install --upgrade azureml-sdk[notebooks]
+    pip install --upgrade azureml-sdk
     ```
 
     You may see some warnings as the package dependencies are installed. You can ignore these.
 
-    > **More Information**: For more details about installing the Azure ML SDK and its optional components, see the [Azure ML SDK Documentation](https://docs.microsoft.com/python/api/overview/azure/ml/install?view=azure-ml-py).
+3. The **azureml-sdk** SDK package provides the most important libraries needed to work with Azure Machine Learning> However, there are some additional packages that contain other useful libraries not included in the main SDK package. Use the following command to install the **azureml-widgets** package, which contains libraries for displaying Azure Machine Learning information in notebooks:
+
+    ```bash
+    pip install --upgrade azureml-widgets
+    ```
+
+4. When the installation is complete, you can close the **Terminal** tab and return to the tab containing the Jupyter home page.
+
+> **More Information**: For more details about installing the Azure ML SDK and its optional components, see the [Azure ML SDK Documentation](https://docs.microsoft.com/python/api/overview/azure/ml/install?view=azure-ml-py).
 
 ## Run experiments in a notebook
 
 Experiments in Azure Machine Learning need to be initiated from some sort of *control* layer; often a script or program. In this exercise, you'll use a notebook to control experiments.
 
-1. In the Jupyter home page, browse to the folder where you cloned the notebook repository, and open the **Run Experiments** notebook.
+1. In the Jupyter home page, browse to the **Users/DP100** folder where you cloned the notebook repository, and open the **Run Experiments** notebook.
 2. Then read the notes in the notebook, running each code cell in turn.
 3. When you have finished running the code in the notebook, on the **File** menu, click **Close and Halt** to close it and shut down its Python kernel. Then close all Jupyter browser tabs.
 
